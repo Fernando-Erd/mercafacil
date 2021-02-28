@@ -19,7 +19,6 @@ async function insertMacapa(contacts){
         });
         connection.query(sql, [values], function (err, result) {
             if (err) throw err;
-            console.log("Number of records inserted: " + result.affectedRows);
         });
     });
     return "Inserido com sucesso no banco MySQL!!!!";
