@@ -51,11 +51,11 @@ Para adicionar um novo conjunto de clientes o usuário necessita acessar o segui
    "contacts":[
       {
          "name":"Joãozinho",
-         "cellphone":"5541123456789"
+         "cellphone":"5541923456789"
       },
       {
          "name":"Terezinha",
-         "cellphone":"5541123456788"
+         "cellphone":"5541923456788"
       }
    ]
 }
