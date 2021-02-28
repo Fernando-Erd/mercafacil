@@ -37,19 +37,23 @@ async function insertVarejao(contacts){
 
 addClientApp.post('/', verifyAuth, async (req, res) => {
     const { contacts } = req.body;
-    try {
-        if (req.userId === 1) {
-            result = await insertMacapa(contacts);
-            res.json({message: result});
-        } else if (req.userId === 2) {
-            result = await insertVarejao(contacts);
-            res.json({message: result});
-        } else {
-            res.json({message: "Ops, algo de errado aconteceu :c"});
+    if (contacts === undefined) {
+        res.json({message: "Ops, o body está vazio"});
+    } else {
+        try {
+            if (req.userId === 1) {
+                result = await insertMacapa(contacts);
+                res.json({message: result});
+            } else if (req.userId === 2) {
+                result = await insertVarejao(contacts);
+                res.json({message: result});
+            } else {
+                res.json({message: "Ops, algo de errado aconteceu :c"});
+            }
+        } catch (err) {
+            console.log(err.message);
+            req.json({message: err.message});
         }
-    } catch (err) {
-        console.log(err.message);
-        req.json(err.message);
     }
 });
 
