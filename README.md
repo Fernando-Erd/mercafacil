@@ -47,7 +47,7 @@ Esse token é válido por 5 minutos, após isso o usuário necessita realizar lo
 #### Inserção no banco de dados
 Com o token em mãos é necessário criar um campo no *header* do *postman* chamado **x-access-token** e no campo de  **value** deve ser colocado o token gerado para o usuário.
 
-Para adicionar um novo conjunto de clientes o usuário necessita acessar o seguinte endereço: http://localhost:80/add_clientes e no body da requisição deve conter um *json* no seguinte formato:
+Para adicionar um novo conjunto de clientes o usuário necessita acessar o seguinte endereço: http://localhost:80/add_client e no body da requisição deve conter um *json* no seguinte formato:
 
 ```json
 {
