@@ -12,7 +12,7 @@ Observação: As tabelas são criadas ao subir o docker.
 ## Funcionamento
 
 #### Alguns Comentários
-Segundo o enunciado entendi que as inserções no banco do postgres seria necessário remover o 9 adicionar de cada usuário, por exemplo 5541930624830 será inserido como 554130624830 no banco de dados.
+Segundo o enunciado entendi que as inserções no banco do postgres seria necessário remover o 9 ao adicionar cada usuário, por exemplo 5541930624830 será inserido como 554130624830 no banco de dados.
 
 #### Autenticação
 Para o usuário autenticar é necessário mandar um *post* para o seguinte endereço: http://localhost:80/login
